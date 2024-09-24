@@ -24,24 +24,25 @@ El proyecto se apoya en Airflow para la automatización del proceso y SQLAlchemy
 Sigue los siguientes pasos para instalar y ejecutar el proyecto:
 
 1. Clona el repositorio:
-
 ```bash
 git clone https://github.com/tuusuario/proyecto-etl.git
 cd proyecto-etl
 ```
 
 2. Crea un entorno virtual y actívalo:
-
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate  # Windows
+```
 
 3. Instala las dependencias:
-
+```bash
 pip install -r requirements.txt
+```
 
 4. Configura las variables de entorno. Crea un archivo .env en la raíz del proyecto y define las siguientes variables:
-
+```python
 DB_USER=tu_usuario
 DB_PASSWORD=tu_contraseña
 DB_HOST=localhost
@@ -52,7 +53,7 @@ STOCK_EXTRAC_DATA_TEMP=/tmp/stock_data_extracted.csv
 STOCK_TRANSFORM_DATA_TEMP=/tmp/stock_data_transformed.csv
 DAILY_STOCK_DATA=ruta_a_los_datos_diarios
 DAILY_STOCK_EXTRACT_DATA_TEMP=/tmp/stock_daily_extracted.csv
-
+```
 ## Uso
 
 1. Ejecutar el pipeline ETL para cargar datos historicos:
