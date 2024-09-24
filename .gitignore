@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Entornos virtuales
+env/
+venv/
+.kiosko/  # Si tienes un ambiente virtual personalizado
+
+# Configuración de entornos
+.env
+*.env
+
+# Archivos de Airflow
+airflow.cfg
+unittests.cfg
+webserver_config.py
+logs/
+tmp/
+.dags/
+
+# Archivos temporales y de datos
+*.csv
+*.parquet
+/tmp/
+data/raw/
+data/processed/
+data/interim/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de bases de datos temporales
+*.sqlite
+*.db
+
+# Archivos relacionados con IDEs o editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
